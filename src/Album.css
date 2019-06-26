@@ -1,0 +1,9 @@
+li {
+  list-style: none;
+  padding: 10px;
+}
+
+li img {
+  object-fit: cover;
+  width: 100%;
+}

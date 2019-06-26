@@ -1,0 +1,35 @@
+@media screen and (min-width: 768px) {
+  #container {
+    width: 750px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #container {
+    width: 970px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #container {
+    width: 1170px;
+  }
+}
+
+#container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#container,
+ul {
+  display: flex;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  flex-direction: row;
+}
+
+#container ul {
+  flex-wrap: wrap;
+}
