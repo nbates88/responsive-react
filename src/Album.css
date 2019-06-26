@@ -1,9 +1,20 @@
-li {
+.AlbumListItem {
   list-style: none;
   padding: 10px;
 }
 
-li img {
+.AlbumListItem img {
   object-fit: cover;
   width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .AlbumListItem {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    width: 55%;
+    min-height: 1;
+    position: relative;
+    padding-top: 12px;
+  }
 }

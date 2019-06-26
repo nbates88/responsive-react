@@ -10,7 +10,7 @@ export default class AlbumListItem extends React.Component<AlbumProps> {
   render() {
     const { album } = this.props;
     return (
-      <li className="col-xs-12 col-md-4">
+      <li className="AlbumListItem col-xs-12 col-md-4">
         <img src={album.images[0].url} />
       </li>
     );

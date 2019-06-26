@@ -21,8 +21,7 @@
   margin-right: auto;
 }
 
-#container,
-ul {
+#container {
   display: flex;
   display: -webkit-flex;
   display: -webkit-box;
@@ -30,6 +29,20 @@ ul {
   flex-direction: row;
 }
 
-#container ul {
-  flex-wrap: wrap;
+@media screen and (min-width: 768px) {
+  #container ul {
+    display: flex;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #container ul {
+    white-space: nowrap;
+    overflow-x: auto;
+  }
 }
