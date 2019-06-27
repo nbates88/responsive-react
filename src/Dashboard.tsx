@@ -55,7 +55,7 @@ export default class Dashboard extends React.Component<
     return (
       <div id="container">
         <Row flex-row>
-          <Col xs={12} md={4}>
+          <Col xs={12} md={4} id="col-first">
             <small>Recently Played</small>
             <h1>Jump back in</h1>
             <h3>Pick up your music right where you left off.</h3>

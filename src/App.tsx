@@ -1,6 +1,8 @@
 import React from "react";
 import Dashboard from "./Dashboard";
+import MyNavbar from "./Navbar";
 import "./App.css";
+import Dashboard2 from "./Dashboard2";
 
 interface AppProps {}
 interface AppState {
@@ -27,9 +29,10 @@ class App extends React.Component<AppProps, AppState> {
     const { token } = this.state;
 
     return (
-      <div>
+      <div className="App">
+        <MyNavbar />
         {token ? (
-          <Dashboard accessToken={token} />
+          <Dashboard2 />
         ) : (
           <a
             href="https://accounts.spotify.com/authorize?client_id=64be1cae6cff465c98d1e780d47f064b&response_type=token&redirect_uri=http:%2F%2Flocalhost:3000%2Fapi%2Fcallback"
